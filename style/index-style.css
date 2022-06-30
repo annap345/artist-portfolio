@@ -1,1 +1,79 @@
-/* / font-family: 'Bellota', cursive;
+:root {
+  --default-font: "Bellota Text", cursive;
+  --default-color: #d5def5;
+}
+
+body {
+  background-color: #fafbff;
+}
+
+.main-info {
+  margin: 50px;
+}
+
+.home,
+.about,
+.contact,
+.my-art,
+.logo {
+  font-family: var(--default-font);
+}
+
+.home {
+  font-weight: 400;
+  font-style: italic;
+  transition: all 200ms ease-in-out;
+}
+
+.home:hover {
+  opacity: 0.8;
+}
+
+.col-md {
+  display: flex;
+  justify-content: space-around;
+}
+
+.avatar {
+  max-width: 70%;
+  border-style: solid;
+  border-color: var(--default-color);
+  border-radius: 50%;
+  margin: 60px;
+}
+
+.heading {
+  text-align: center;
+  font-family: var(--default-font);
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-link {
+  color: black;
+  font-family: var(--default-font);
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--default-color);
+  text-align: center;
+  border-radius: 25px;
+}
+
+.contact-link:hover {
+  color: #8594e4;
+}
+
+@media (max-width: 762px) {
+  .contact-link {
+    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
