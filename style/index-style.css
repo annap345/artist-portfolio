@@ -169,6 +169,7 @@ body {
     font-size: 35px;
     text-align: center;
   }
+
   .gensh-sub-heading {
     font-size: 25px;
     text-align: center;
@@ -181,5 +182,28 @@ body {
     padding: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+
+  .home,
+  .about,
+  .my-art,
+  .contact {
+    transition: all 200ms ease;
+  }
+
+  .home:hover {
+    transform: scale(0.9);
+  }
+
+  .about:hover {
+    transform: scale(0.9);
+  }
+
+  .my-art:hover {
+    transform: scale(0.9);
+  }
+
+  .contact:hover {
+    transform: scale(0.9);
   }
 }
