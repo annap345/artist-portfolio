@@ -70,10 +70,99 @@ body {
   color: #8594e4;
 }
 
+.col-sm {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.shen {
+  max-width: 70%;
+  border-radius: 20px;
+}
+
+.gensh-heading,
+.gensh-sub-heading {
+  font-family: var(--default-font);
+  text-align: center;
+  font-style: italic;
+}
+
+.gensh-heading {
+  font-size: 60px;
+}
+
+.gensh-sub-heading {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.art-info-shen {
+  margin-top: 20px;
+  margin: 0 auto;
+  max-width: 80%;
+  background-color: var(--default-color);
+  padding: 30px;
+  border-radius: 30px;
+  transition: 300ms ease-in-out;
+}
+
+.art-info-shen:hover {
+  transform: scale(1.1);
+}
+
+.gensh-info {
+  background-color: #b7c0f4;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 70%;
+}
+
+.majesty {
+  max-width: 70%;
+  border-radius: 30px;
+}
+
+.art-info-majesty {
+  background-color: var(--default-color);
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  transition: 300ms ease-in-out;
+}
+
+.art-info-majesty:hover {
+  transform: scale(1.1);
+}
+
+.majesty-heading {
+  font-family: var(--default-font);
+  font-size: 60px;
+  background-color: #b7c0f4;
+  padding: 30px;
+  border-radius: 30px;
+  font-style: italic;
+}
+
 @media (max-width: 762px) {
   .contact-link {
     padding: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 360px) {
+  .gensh-heading,
+  .majesty-heading {
+    font-size: 30px;
+  }
+  .gensh-sub-heading {
+    font-size: 15px;
+  }
+
+  .shen {
+    margin-bottom: 10px;
   }
 }
