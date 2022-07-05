@@ -50,6 +50,7 @@ a {
 
 .container {
   margin: 40px;
+  margin-left: 20px;
 }
 
 h1 {
@@ -58,24 +59,25 @@ h1 {
 }
 
 .row {
+  display: flex;
+  justify-content: space-evenly;
   margin: 30px;
-  margin-right: 100px;
 }
 
 .col-sm {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .zhon {
   max-width: 80%;
   height: auto;
-  margin-left: 80px;
 }
 
 .zhon-tart {
   max-width: 100%;
   height: auto;
+  margin-right: 40px;
 }
 
 .float {
@@ -86,16 +88,94 @@ h1 {
 .face {
   max-width: 85%;
   height: auto;
+  margin-right: 20px;
 }
 
 .two {
   max-width: 100%;
   height: auto;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .cat {
   max-width: 85%;
   height: auto;
-  margin-right: 40px;
+}
+
+.zhon,
+.zhon-tart,
+.float,
+.face,
+.two,
+.cat {
+  padding: 20px;
+  background-color: var(--default-color);
+  border-radius: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.zhon:hover,
+.zhon-tart:hover,
+.float:hover,
+.face:hover,
+.two:hover,
+.cat:hover {
+  background-color: #c0d0f8;
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  background-color: var(--default-color);
+  max-width: 150px;
+  font-size: 25px;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.more:hover {
+  color: #8594e4;
+}
+
+@media (max-width: 982px) {
+  .work-info .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+}
+
+@media (max-width: 572px) {
+  .zhon,
+  .zhon-tart,
+  .float,
+  .face,
+  .two,
+  .cat {
+    margin: 0%;
+  }
+
+  .row {
+    margin: 0%;
+  }
+
+  .col-sm {
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
 }
