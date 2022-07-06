@@ -164,6 +164,7 @@ h2 {
   .two,
   .cat {
     margin: 0%;
+    padding: 10px;
   }
 
   .row {
