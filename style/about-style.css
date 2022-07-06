@@ -182,4 +182,8 @@ hr {
   img {
     border-radius: 10px;
   }
+
+  .logo-inst {
+    width: 10%;
+  }
 }

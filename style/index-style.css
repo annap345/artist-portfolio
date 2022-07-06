@@ -235,4 +235,8 @@ hr {
   .contact:hover {
     transform: scale(0.9);
   }
+
+  .logo-inst {
+    width: 10%;
+  }
 }
