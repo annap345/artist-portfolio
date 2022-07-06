@@ -159,6 +159,35 @@ body {
   font-style: italic;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+.logo-inst {
+  max-width: 2%;
+  height: auto;
+}
+
+.rock {
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  font-family: var(--default-font);
+}
+
+.rock:hover {
+  color: #8594e4;
+}
+
+hr {
+  color: #b7c0f4;
+}
+
 @media (min-width: 360px) {
   .majesty-heading {
     font-size: 40px;
